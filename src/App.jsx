@@ -1,12 +1,14 @@
-import './index.css'
+
+import Navbar from './components/Navbar/navbar';
+
 
 function App() {
 
 
   return (
     
-      <div className="app">
-       <h1>red</h1>
+      <div className="App">
+        <Navbar />
       </div>
    
   )
