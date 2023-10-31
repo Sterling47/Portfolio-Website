@@ -1,0 +1,58 @@
+#intro {
+    margin: 2rem auto;
+    background: rgb(26, 26, 26);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    width: 100vw;
+}
+
+.introText { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+  
+}
+
+.introText span {
+    color: rgb(150, 215, 52);
+}
+
+.introText h3, .introText h1, .introText p, .introButton {
+    margin-bottom: 1rem;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.headShot {
+    margin: 1rem 3rem;
+    width: 15rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.introButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    font-size: .75rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+.introButton:hover {
+    background: rgb(150, 215, 52) ;
+}
+
+.buttonImg {
+    width: 1rem;
+    height: 1rem;
+    
+}
