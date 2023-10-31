@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import headshot from '../../assets/headshot.jpeg';
+import headshot from '../../assets/Subject.png';
 import contact from '../../assets/message.png'
 
 const Intro = () => {
