@@ -18,6 +18,7 @@
     max-width: 75rem;
     background: rgb(26, 26, 26);
 }
+
 .aboutInfo h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -39,21 +40,18 @@
     background: rgb(30, 30, 30);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-radius: 1rem;
-    margin: 2rem auto;
-    
+    margin: 2rem auto;    
 }
 
 .listItem img {
     width: 6rem;
     height: 6rem;
-
 }
 
 .itemText h3 {
     font-size: x-large;
 }
 
-.itemText h3, .itemText p {
-    
+.itemText h3, .itemText p {    
     margin: 1rem auto 1rem 0.5rem;
 } 
