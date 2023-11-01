@@ -2,6 +2,9 @@
 import Navbar from './components/Navbar/navbar';
 import Intro from './components/Intro/intro';
 import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+
+
 
 function App() {
 
@@ -12,6 +15,7 @@ function App() {
         <Navbar />
         <Intro />
         <About />
+        <Portfolio />
       </div>
    
   )
