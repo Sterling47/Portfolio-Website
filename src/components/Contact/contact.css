@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 40rem;
+    max-width: 60rem;
     width: 100vw;
     margin: 1rem auto;
     padding: 1rem;
@@ -13,41 +13,52 @@
 }
 
 .formElements {
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
+    width: 90vw;
+    max-width: 60rem;    
 }
 
-.formElements input {
-    border-radius: 5px;
-    border: 0;
-    background-color: rgb(30,30,30);
+.email, .name, .msg {
+    border-radius: 0.25rem;
+    background: rgb(40,40,40);
     margin: 0.5rem;
     color: white;
-    width: 20rem;
-    height: 3rem;
-    font-size: 2rem;
-   
-}
-
-textarea {
-    border-radius: 5px;
+    width: 100%;
+    max-width: 30rem;
+    padding: 0.4rem;
     border: none;
-    background-color: rgb(30,30,30);
-    margin: 0.5rem;
-    color: white;
-    width: 20rem;
-    
+}
+
+.formElements p {
+    margin: 2rem 1rem auto;
 }
 
 .formBtn {
     background: white;
     color: black;
-    padding: 1rem;
-    margin: 1rem auto;
-    border-radius: 2rem;
+    padding: 0.75rem 3.5rem;
+    margin: 1.5rem ;
+    border-radius: 0.5rem;
     border: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkImg, .gitImg {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.5rem;
+}
+
+.gitImg {
+   background: white;
+    border-radius: 50%;
 }
