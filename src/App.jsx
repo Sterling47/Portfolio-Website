@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/navbar';
 import Intro from './components/Intro/intro';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Intro />
         <About />
         <Portfolio />
+        <Contact />
       </div>
    
   )
