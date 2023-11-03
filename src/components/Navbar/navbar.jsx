@@ -12,12 +12,14 @@ const Navbar = () => {
     <nav className='navbar'>
       <img src={logo} alt="logo" className='logo'/>
       <div className="menu">
-        <Link className="menuListItem">Home</Link>
-        <Link className="menuListItem">About</Link>
-        <Link className="menuListItem">Portfolio</Link>
+        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="menuListItem">Home</Link>
+        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} className="menuListItem">About</Link>
+        <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} className="menuListItem">Portfolio</Link>
       </div>  
-      <button className='menuBtn'>
-        <img src={contact} alt="contact" className="menuBtnImg" />Contact Me</button>
+      <Link activeClass='active' to='contactForm' spy={true} smooth={true} offset={-100} className='menuBtn'>
+      <img src={contact} alt="contact" className="menuBtnImg" />
+      Contact Me
+      </Link>
     </nav>
   )
 }

@@ -9,7 +9,7 @@ const Portfolio = () => {
   
 
   return (
-   <section id='myPortfolio'>
+   <section id='portfolio'>
     <div className='elements'>
         <h1>My Porfolio</h1>
         <p>Some curated projects to showcase the skills ive taught my self.</p>

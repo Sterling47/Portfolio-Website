@@ -43,7 +43,9 @@
     font-size: .75rem;
     border: none;
     background: white;
+    width: 8.225rem;
     border-radius: 2rem;
+    color: black;
 }
 
 .introButton:hover {

@@ -21,6 +21,11 @@
     width: 90vw;
     max-width: 60rem;    
 }
+.formElements h2 {
+    margin: 2rem;
+    font-size: 3rem;
+    
+}
 
 .email, .name, .msg {
     border-radius: 0.25rem;
@@ -47,6 +52,12 @@
     border-radius: 0.5rem;
     border: none;
 }
+
+.formBtn:hover {
+    background: rgb(150, 215, 52);
+}
+
+.formBtn
 
 .links {
     display: flex;

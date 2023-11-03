@@ -51,6 +51,7 @@
     border: none;
     background: white;
     border-radius: 2rem;
+    color: black;
 }
 
 .menuBtn:hover{
