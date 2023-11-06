@@ -4,7 +4,7 @@ import logo from '../../assets/a.kgreen.png';
 import contact from '../../assets/message.png';
 import { Link } from 'react-scroll';
  
-const icon = <a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by Smashicons - Flaticon</a>
+
 
 
 const Navbar = () => {
@@ -16,9 +16,9 @@ const Navbar = () => {
         <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} className="menuListItem">About</Link>
         <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} className="menuListItem">Portfolio</Link>
       </div>  
-      <Link activeClass='active' to='contactForm' spy={true} smooth={true} offset={-100} className='menuBtn'>
-      <img src={contact} alt="contact" className="menuBtnImg" />
-      Contact Me
+        <Link activeClass='active' to='contactForm' spy={true} smooth={true} offset={-100} className='menuBtn'>
+        <img src={contact} alt="contact" className="menuBtnImg" />
+        Contact Me
       </Link>
     </nav>
   )

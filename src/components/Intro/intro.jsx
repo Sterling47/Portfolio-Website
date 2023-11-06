@@ -7,23 +7,19 @@ import { Link } from 'react-scroll';
 const Intro = () => {
   return (
    <section id="intro">
-    <div className='introText'>
+    <div className='introContent'>
         <h3>Hello,</h3>
-        <h1>Im <span>Adam</span>
-                <br /> Creative Innovative Reliable
+        <h1>Im <span>Adam</span> - React developer
+                <br /> Creative | Innovative | Reliable
         </h1>
         <p>From the ground up developer. Inspired by building fast and scalable projects to benefit all users.</p>
-        <div>
-            <Link activeClass='active' to='contactForm' spy={true} smooth={true} offset={-100} className='introButton'>
-                <img src={contact} alt="contact" className='buttonImg' />
-                Hire me
-            </Link>
-        </div>
-       
+        <Link activeClass='active' spy={true} smooth={true} offset={-100} duration={500} className='hireMe'>
+            <img src={contact} alt="img" className='buttonImg' />
+            hire me
+        </Link>
     </div>
-    <div className='imgDiv'>
-        <img className='headShot' src={headshot} alt="headshot" />
-    </div>
+    <img className='headShot' src={headshot} alt="headshot" />
+   
    </section>
   )
 }
