@@ -10,6 +10,7 @@
     z-index: -1;
 }
 
+
 .introContent {         
     background: transparent;
     display: flex;
@@ -35,7 +36,7 @@
 }
 
 .introContent span {
-    color: rgb(150, 215, 52);
+    color: rgb(237, 28, 0);
 }
 
 .introContent h3, .introContent h1, .introContent p {

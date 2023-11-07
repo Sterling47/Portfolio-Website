@@ -22,7 +22,7 @@
     align-items: center;
     flex-direction: column;
     margin: 1rem auto;
-    width: 50rem;
+    width: 45rem;
     height: auto;
     padding: 2rem;
     background: rgb(30, 30, 30);
@@ -41,7 +41,7 @@
    
 }
 
-.projectbtn {
+.projectbtn, .showMoreButton {
     background: white;
     padding: 1rem;
     border-radius: 2rem;

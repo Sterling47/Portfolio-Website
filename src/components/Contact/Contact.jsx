@@ -5,9 +5,11 @@ import github from '../../assets/github.png';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
- 
+  
   const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const LinkedIn = 'https://www.linkedin.com/in/adam-konber';
+  const gitLink ='https://github.com/Sterling47?tab=repositories'
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,8 +39,8 @@ const Contact = () => {
               </textarea>       
               <button type='submit' value='send' className='formBtn'>Submit</button>
               <div className='links'>
-                <a target="_blank" href="linkedin.com"><img className='linkImg'src={linked} alt="LinkedIn" /></a>
-                <a target="_blank" href=""><img  className='gitImg'src={github} alt="LinkedIn" /></a>   
+                <a target="_blank" href={LinkedIn}><img className='linkImg'src={linked} alt="LinkedIn" /></a>
+                <a target="_blank" href={gitLink}><img  className='gitImg'src={github} alt="LinkedIn" /></a>   
               </div>
             </form> 
           ) : (
