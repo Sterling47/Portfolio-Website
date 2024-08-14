@@ -1,21 +1,21 @@
 import React from 'react';
 import './intro.css';
-import headshot from '../../assets/Subject.png';
+import headshot from '../../assets/headshots.jpg';
 import contact from '../../assets/message.png';
 
 
 const Intro = () => {
   return (
-   <section id="intro" >
+   <section className="wrapper" >
+    <div className="intro-wrapper">
     <div className='introContent'>
-        <h3>Hello,</h3>
         <h1>Im <span>Adam</span> - React developer
-                <br /> Creative | Innovative | Reliable
+        <br /> Creative | Innovative | Reliable
         </h1>
-        <p>From the ground up developer. Inspired by building fast and scalable projects to benefit all users.</p>  
+        <p>From the ground up React developer driven by the passion for building efficient, scalable projects that benefit all users. Committed to accessibility and thorough testing to ensure the best possible experience for everyone</p>  
     </div>
     <img className='headShot' src={headshot} alt="headshot" />
-   
+   </div>
    </section>
   )
 }

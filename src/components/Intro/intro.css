@@ -1,18 +1,13 @@
-#intro {
-    height: calc(100vh - 4rem);
-    margin: 1rem auto;
+.intro-wrapper {
+    z-index: -1;
     background: rgb(26, 26, 26);
-    max-width: 75rem;
-    width: 100vw;
     overflow: hidden;
     position: relative;
-    padding-bottom: 1rem;
-    z-index: -1;
+    margin: 2rem;
+    height: 80%;
+    width: 75rem;
 }
-
-
 .introContent {         
-    background: transparent;
     display: flex;
     justify-content:start;
     flex-direction: column;
@@ -23,20 +18,88 @@
     z-index: 2;
 }
 
-.headShot {
+/* .headShot {
     position: absolute;
     right: 4rem;
-    width: 17rem;
+    width: 25rem;
     margin: 1rem auto;
-    height: 100vh;
+    height: 25rem;
     max-height: 90%;
     object-fit: cover;
     top: 1rem; 
     z-index: -1;
+    border-radius: 50%;
+    border: .5rem solid rgb(30, 30, 30);;
+} */
+
+.headShot {
+    position: absolute;
+    right: 4rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem auto;
+    top: 1rem;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: morph 14s infinite ease-in-out, borderColorChange 5s infinite linear;
+    border: .5rem solid transparent;
+    background: linear-gradient(45deg, #2a2529, #61a003, #bdbdbd, #4a4949, #96d734);
+    background-size: 300% 300%;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    border-image-slice: 1;
 }
 
+@keyframes morph {
+    0%, 100% {
+        border-radius: 50% 50% 30% 50%;
+    }
+    25% {
+        border-radius: 60% 43% 50% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 40% 60%;
+    }
+    75% {
+        border-radius: 50% 50% 60% 40%;
+    }
+}
+
+@keyframes borderColorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes textColorChange {
+    0% {
+        color: #2a2529;
+    }
+    25% {
+        color: #61a003;
+    }
+    50% {
+        color: #bdbdbd;
+    }
+    75% {
+        color: #4a4949;
+    }
+    100% {
+        color: #96d734;
+    }
+}
+
+
 .introContent span {
-    color: rgb(237, 28, 0);
+    animation: textColorChange 5s infinite linear; /* Apply the color change animation */
+    color: #96d734; /* Initial color */
 }
 
 .introContent h3, .introContent h1, .introContent p {
