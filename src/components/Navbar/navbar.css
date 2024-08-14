@@ -26,6 +26,7 @@
     margin: 1rem;
     cursor: pointer;
     font-family: sans-serif;
+    color: white;
 }
 
 .menuListItem:hover {

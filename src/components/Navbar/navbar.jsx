@@ -2,8 +2,8 @@ import React from 'react';
 import './navbar.css';
 import logo from '../../assets/a.kgreen.png';
 import contact from '../../assets/message.png';
-import { Link } from 'react-scroll';
- 
+import { Link } from 'react-router-dom';
+                    
 
 
 
@@ -12,11 +12,12 @@ const Navbar = () => {
     <nav className='navbar'>
       <img src={logo} alt="logo" className='logo'/>
       <div className="menu">
-        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="menuListItem">Home</Link>
-        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} className="menuListItem">About</Link>
-        <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} className="menuListItem">Portfolio</Link>
+        <Link to='/' className="menuListItem">Home</Link>
+        <Link to='about' className="menuListItem">About</Link>
+        <Link to='portfolio' className="menuListItem">Portfolio</Link>
+        <a href='https://docs.google.com/document/d/1XXzxUGkuynZq89Zb-v7_ZMkHPjrAtG9C/edit?usp=sharing&ouid=118009413304435659474&rtpof=true&sd=true' target="_blank" className='menuListItem'>Resume</a>
       </div>  
-        <Link activeClass='active' to='contactForm' spy={true} smooth={true} offset={-100} className='menuBtn'>
+        <Link to='contact' className='menuBtn'>
         <img src={contact} alt="contact" className="menuBtnImg" />
         Contact Me
       </Link>
