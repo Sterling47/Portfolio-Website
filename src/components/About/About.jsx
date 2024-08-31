@@ -1,8 +1,8 @@
 import React from 'react';
 import './about.css';
-import eye from '../../assets/curve.png';
-import build from '../../assets/tool.png';
-import thinker from '../../assets/piechart.png';
+import access from '../../assets/accesibility.png'
+import thinker from '../../assets/design-thinking.png';
+import team from '../../assets/team.png'
 
 const About = () => {
   return (
@@ -19,14 +19,14 @@ const About = () => {
                     </div>
                 </li>
                 <li className="listItem">
-                    <img src={build} alt="" />
+                    <img src={access} alt="" />
                     <div className='itemText'>   
                         <h3>Application developer</h3>
                         <p>I focus on scalability, user accesability and sotrage elasticity</p>
                     </div> 
                 </li>
                 <li className="listItem">
-                    <img src={eye} alt="img" />
+                    <img src={team} alt="img" />
                     <div className='itemText'>
                         <h3>Buisness Oriented</h3>
                         <p>Worked with small manufacturing start up to help acheive exellence</p>

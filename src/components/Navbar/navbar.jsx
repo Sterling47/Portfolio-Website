@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to='/' className="menuListItem">Home</Link>
         <Link to='about' className="menuListItem">About</Link>
         <Link to='portfolio' className="menuListItem">Portfolio</Link>
-        <a href='https://docs.google.com/document/d/1XXzxUGkuynZq89Zb-v7_ZMkHPjrAtG9C/edit?usp=sharing&ouid=118009413304435659474&rtpof=true&sd=true' target="_blank" className='menuListItem'>Resume</a>
+        <Link to='resume' className='menuListItem'> Resume </ Link>
       </div>  
         <Link to='contact' className='menuBtn'>
         <img src={contact} alt="contact" className="menuBtnImg" />

@@ -1,18 +1,10 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: calc(100vh - 4rem);
-    width: 100%;
-
-    box-sizing: border-box;
-    overflow: hidden; /* Prevent scrollbars */
-}
 
 .carousel {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 #portfolio {
@@ -62,6 +54,7 @@
     margin: 1rem;
     color: black;
     height: 4rem;
+    border: none;
 }
 
 .projectbtn:hover {

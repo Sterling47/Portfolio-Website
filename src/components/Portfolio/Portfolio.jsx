@@ -55,7 +55,7 @@ const Portfolio = () => {
                     <h1>My Portfolio</h1>
                     <p>Some curated projects to showcase the skills I've taught myself.</p>
                     <div className="carousel">
-                        <button className='projectbtn' onClick={handlePrev}>&lt; Prev</button>
+                        <button className='projectbtn' onClick={handlePrev}> &lt; Prev</button>
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={currentIndex}
