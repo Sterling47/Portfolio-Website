@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <img src={logo} alt="logo" className='logo'/>
+      <Link to='/'><img src={logo} alt="logo" className='logo'/></Link>
       <div className="menu">
         <Link to='/' className="menuListItem">Home</Link>
         <Link to='about' className="menuListItem">About</Link>

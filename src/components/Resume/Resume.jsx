@@ -27,7 +27,7 @@ const Resume = () => {
       "UI/UX Testing",
       "End-to-End Testing (Cypress)",
     ],
-    toolsAndPlatforms: [
+    'tools/Platforms': [
       "Git",
       "GitHub",
       "Figma",
@@ -78,31 +78,37 @@ const Resume = () => {
             </div>
           ))}
         </div>
-            <h3>EDUCATION</h3>
-            <h4>Turing School of Software and Design | Front End Engineering Certificate of Completion</h4>
-<ul>
-  <li>1500 Hours of programming experience over a seven month, intensive ACCET-accredited software development program.</li>
-  <li>Elected to the Student Leader Committee, leading and mentoring students through their learning experience.</li>
-  <li>Recipient of Diversity and Inclusivity Scholarship</li>
-</ul>
-            <h3>RECENT PROJECTS</h3>
-           <h2> 'Rancid Tomatillo (Repository)(Deploy)          		      					45 Hours</h2>
-
-
-Tech Stack: React.js, FramerMotion.js, HTML, CSS, Cypress
-Developed a dynamic React movie review application that seamlessly integrates third-party API data to deliver an engaging, user-focused experience.
- <ul>
- <li>Dynamic UI: Utilized React's state management and CRUD operations to create a responsive, interactive user interface.</li> 
-  <li>Enhanced UX: Implemented Framer-Motion for seamless animation transitions, elevating user engagement.</li>
- • <li>Tested Reliability: Ensured application stability with comprehensive Cypress testing across all user flows.</li>
- </ul>
-Ingredient Search -FullStack (FE Repo)(BE Repo)(Deploy)                   				85 Hours
-Tech Stack: React.js, Express.js, PostgreSQL, Knex.js, HTML, CSS, JavaScript
-Designed and developed a full-stack application that enables users to efficiently search, view, and manage detailed food ingredient information.
- •  Full-Stack Development: Developed a responsive frontend and a robust backend, integrating migration files, seed files, and environment variables for secure and efficient data management.
- •Data Management: Utilized CSV files for data import and PostgreSQL for reliable, scalable database management.
-          
+        <div className='education-wrapper'>
+          <h3>EDUCATION</h3>
+          <h4>Turing School of Software and Design | Front End Engineering Certificate of Completion</h4>
+          <ul>
+            <li>1500 Hours of programming experience over a seven month, intensive ACCET-accredited software development program.</li>
+            <li>Elected to the Student Leader Committee, leading and mentoring students through their learning experience.</li>
+            <li>Recipient of Diversity and Inclusivity Scholarship</li>
+          </ul>
         </div>
+        <h3>RECENT PROJECTS</h3>
+        <h4> Rancid Tomatillo (Repository) (Deploy) 45 Hours</h4>
+
+        <span>Tech Stack:</span> React.js, FramerMotion.js, HTML, CSS, Cypress
+       <p>Developed a dynamic React movie review application that seamlessly integrates third-party API data to deliver an engaging, user-focused experience.</p> 
+        <ul>
+          <li>Dynamic UI: Utilized React's state management and CRUD operations to create a responsive, interactive user interface.</li>
+          <li>Enhanced UX: Implemented Framer-Motion for seamless animation transitions, elevating user engagement.</li>
+          <li>Tested Reliability: Ensured application stability with comprehensive Cypress testing across all user flows.</li>
+        </ul>
+        <h4>Ingredient Search - FullStack (FE Repo) (BE Repo) (Deploy) 85 Hours</h4>
+        <span>Tech Stack:</span> React.js, Express.js, PostgreSQL, Knex.js, HTML, CSS, JavaScript
+        <p>Designed and developed a full-stack application that enables users to efficiently search, view, and manage detailed food ingredient information.</p>
+      <ul>
+        <li>
+          Full-Stack Development: Developed a responsive frontend and a robust backend, integrating migration files, seed files, and environment variables for secure and efficient data management.
+        </li>
+        <li>
+          Data Management: Utilized CSV files for data import and PostgreSQL for reliable, scalable database management.
+        </li>
+       </ul>
+      </div>
     </div>
   )
 }
