@@ -13,7 +13,7 @@ const Navbar = () => {
       <Link to='/'><img src={logo} alt="logo" className='logo'/></Link>
       <div className="menu">
         <Link to='/' className="menuListItem">Home</Link>
-        <Link to='about' className="menuListItem">About</Link>
+        <Link to='about' className="menuListItem">Services</Link>
         <Link to='portfolio' className="menuListItem">Portfolio</Link>
         <Link to='resume' className='menuListItem'> Resume </ Link>
       </div>  

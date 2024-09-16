@@ -69,3 +69,16 @@
 .button-wrapper {
     margin: 1rem;
 }
+
+
+@media screen and (max-width: 390px) {
+    .prjImg {
+      max-width: 11rem; /* Adjust image size */
+    }
+  
+    .projectbtn, .showMoreButton {
+      padding: 0.4rem;
+      font-size: 0.75rem; /* Slightly smaller text size */
+    }
+  }
+  
