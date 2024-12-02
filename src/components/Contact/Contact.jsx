@@ -26,8 +26,9 @@ const Contact = () => {
   const resetForm = () => { setFormSubmitted(false); };
 
   return (
-    <section id='contactForm'>
-      <div>
+    <div className="wrapper">
+
+      <div id='contactForm'>
         {!formSubmitted ? (
             <form className='formElements' ref={form} aria-required onSubmit={sendEmail}>   
               <h2>Email Me!</h2>
@@ -51,7 +52,7 @@ const Contact = () => {
           )
         }
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background:  rgba(26, 26, 26, 0.3);
+    background:  rgba(17, 17, 17, 0.3);
     align-items: center;
     max-width: 75rem;
     height: 6rem;
@@ -11,6 +11,9 @@
     position: sticky;
     top: 0;
     z-index: 3;
+    border-bottom-left-radius: .64rem;
+    border-bottom-right-radius: .64rem;
+    box-shadow: rgba(18, 18, 34, 0.25) 0px 2px 5px -1px, rgba(31, 14, 14, 0.3) 0px 1px 3px -1px;
 }
 
 .logo {

@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Resume from './components/Resume/Resume';
 import Footer from './components/Footer/Footer';
+import '../style.css'
 
 function App() {
   return (
@@ -43,14 +44,7 @@ function PageWrapper({ children }) {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: '-100%', opacity: 0 }}
       transition={{ type: 'tween', duration: 0.5 }}
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        overflow: 'hidden',
-        boxSizing: 'border-box',
-      }}
+      className='page-wrapper'
     >
       {children}
     </motion.div>

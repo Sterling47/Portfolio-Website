@@ -1,4 +1,4 @@
-#about {
+/* #about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     max-width: 75rem;
     width: 100vw;
     
-}
+} */
 
 .aboutInfo {
     display: flex;
@@ -14,18 +14,11 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem 2rem;
-    width: 100vw;
-    max-width: 75rem;
-    background: rgb(26, 26, 26);
-}
-
-.aboutInfo h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.aboutInfo p {
-    margin-bottom: 3rem;
+    border-radius: .64rem;
+    height: 90%;
+    width: 80%;
+    background: rgba(26, 26, 26, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .listInfo {

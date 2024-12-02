@@ -4,6 +4,7 @@
     align-items: center;
     max-width: 60rem;
     width: 100vw;
+    height: 90%;
     background: rgb(26, 26, 26);
     border-radius: 0.75rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -13,22 +14,18 @@
 .formElements {
     margin: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 90vw;
-    max-width: 60rem;    
-}
-.formElements h2 {
-    margin: 2rem;
-    font-size: 3rem;
-    
+    max-width: 60rem; 
+    height: 100%;
 }
 
 .email, .name, .msg {
     border-radius: 0.25rem;
     background: rgb(40,40,40);
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     color: white;
     width: 100%;
     max-width: 30rem;
@@ -38,15 +35,14 @@
 
 }
 
-.formElements p {
-    margin: 2rem 1rem auto;
-}
+/* .formElements p {
+
+} */
 
 .formBtn {
     background: white;
     color: black;
     padding: 0.75rem 3.5rem;
-    margin: 1.5rem ;
     border-radius: 0.5rem;
     border: none;
 }
@@ -55,7 +51,7 @@
     background: rgb(150, 215, 52);
 }
 
-.formBtn
+
 
 .links {
     display: flex;

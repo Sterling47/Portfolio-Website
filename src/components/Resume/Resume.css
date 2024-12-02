@@ -7,32 +7,31 @@
     width: 60%;
     margin-bottom: 2rem;
     background: rgba(26, 26, 26, 0.4);
-    padding: 2rem;
+    padding:1rem;
     overflow-y: scroll;
     
-    box-shadow: rgba(150, 215, 52, 0.35) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(150, 215, 5, 0.25) 0px 10px 52px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 1px -3px ;
 }
-::-webkit-scrollbar {
-    width: .75rem;
-    background-color: rgb(30, 30, 30);    
-}
+
 
 
 
 .skills-grid {
     display: flex;
-    flex-direction: row;
+  flex-wrap: wrap;
     gap: 1rem;
     margin: 20px 0;
   }
   
   .skill-category {
+    display: flex;
+    flex-wrap: wrap;
     background: rgb(30, 30, 30);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: fit-content;
-    width: 10rem;
+    width: 8rem;
   }
   
   .skill-category h4 {

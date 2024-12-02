@@ -3,35 +3,47 @@
     justify-content: space-between;
     align-items: center;
     z-index: -1;
-    background: rgb(26, 26, 26);
-    overflow:visible;
+    /* background: rgba(26, 26, 26, 0.2); */
+    overflow: visible;
     position: relative;
-    padding: 2rem; 
-    border-radius: .4rem;
+    border-radius: .94rem;
     box-sizing: border-box;
-    height: 60%; 
     width: 80%; 
-    margin-top: 5rem;
 }
 
 
 .introContent {         
     display: flex;
     flex-direction: column;
-    max-height: 100%; 
+    align-items: start;
+    justify-content: center;
+    height: 100%; 
     max-width: 70%; 
     box-sizing: border-box;
-    text-align: left;
+    padding: 0;
 }
 
+.introContent h1,
+.introContent p {
+  font-size: 95%;
+  margin: 0;
+}
+
+.img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    /* border: #61a003 2px solid; */
+    margin-left: 2rem;
+}
 
 .headShot {
     position: absolute;
-    right: 4rem;
-    width: 20rem;
-    height: 20rem;
-    margin-top: 4rem ;
-    top: 1rem;
+    width: 23%;
+    height: 70%;
+    margin-right: 2rem;
     z-index: -1;
     object-fit: cover;
     border-radius: 50%;
@@ -52,13 +64,12 @@
     background: rgb(26, 26, 26);
     border-radius: .4rem;
     width: 80%;
-    height: 15%;
+    height: 16%;
     justify-content: space-evenly;
 }
 
 .icon {
-    height: 5rem;
-    width: 5rem;
+    height: 75%;
 }
 
 @keyframes morph {
@@ -117,176 +128,9 @@
     letter-spacing: 0.3rem; 
 }
 
-.hireMe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1rem;
-    gap: 1rem;
-    margin: 3rem;
-    font-size: .75rem;
-    border: none;
-    background: white;
-    width: 8.225rem;
-    border-radius: 2rem;
-    color: black;
-}
-
-.hireMe:hover {
-    background: rgb(233, 150, 26);
-}
 
 .buttonImg {
     width: 1rem;
     height: 1rem;    
-}
-
-
-@media (max-width: 430px) {
-    .intro-wrapper {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-        padding: 1rem;
-    }
-
-    .introContent {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .headShot {
-        position: static;
-        width: 12rem;
-        height: 12rem;
-        margin: 0 auto 2rem auto;
-        top: unset;
-        right: unset;
-    }
-
-    .icon-container {
-        display: none;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .icon {
-        height: 4rem;
-        width: 4rem;
-    }
-
-    .introContent h1, .introContent h3, .introContent p {
-        margin: 1.5rem;
-        letter-spacing: 0.2rem;
-    }
-
-    .hireMe {
-        margin: 2rem auto;
-        padding: 0.75rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .buttonImg {
-        width: 0.9rem;
-        height: 0.9rem;
-    }
-}
-
-/* iPhone SE and similar (375px width) */
-@media (max-width: 375px) {
-    .intro-wrapper {
-        padding: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    .headShot {
-        width: 10rem;
-        height: 10rem;
-    }
-
-    .icon-container {
-        display: none;
-        height: auto;
-        margin-top: 0.5rem;
-    }
-
-    .icon {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    .introContent h1, .introContent h3, .introContent p {
-        margin: 1rem;
-        letter-spacing: 0.15rem;
-    }
-
-    .hireMe {
-        margin: 1rem auto;
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
-    }
-
-    .buttonImg {
-        width: 0.8rem;
-        height: 0.8rem;
-    }
-}
-
-/* 1064px width breakpoint */
-@media (max-width: 1064px) {
-    .intro-wrapper {
-        flex-direction: column;
-        height: auto; /* Allow dynamic height adjustment */
-        width: 90%; /* Adjust the width to fit the screen better */
-        padding: 1.5rem;
-        margin-top: 3rem;
-        min-height: 80vh; /* Ensure it fills at least 80% of the viewport height */
-    }
-
-    .introContent {
-        max-width: 100%;
-        text-align: center; /* Center content for smaller screens */
-        margin-bottom: 2rem;
-    }
-
-    .headShot {
-        position: relative; /* Adjust headShot to stay within content bounds */
-        right: 0; /* Remove the fixed right positioning */
-        width: 15rem;
-        height: 15rem;
-        margin-top: 2rem;
-        top: unset;
-    }
-
-    .icon-container {
-        width: 90%; /* Make the icon container fit the reduced screen width */
-        margin-top: 1rem;
-        height: auto; /* Allow height to adjust dynamically */
-    }
-
-    .icon {
-        height: 4.5rem; /* Slightly smaller icons for this breakpoint */
-        width: 4.5rem;
-    }
-
-    .introContent h1, .introContent h3, .introContent p {
-        margin: 2rem;
-        letter-spacing: 0.25rem;
-    }
-
-    .hireMe {
-        margin: 2rem auto;
-        padding: 1rem 1.5rem;
-        font-size: 0.85rem;
-        width: 7.5rem; /* Reduce button width */
-    }
-
-    .buttonImg {
-        width: 0.9rem;
-        height: 0.9rem;
-    }
 }
 

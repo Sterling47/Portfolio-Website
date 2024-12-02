@@ -6,7 +6,7 @@ import team from '../../assets/team.png'
 
 const About = () => {
   return (
-    <section id='about'>
+   <div className="wrapper">
         <div className='aboutInfo'>
             <h2>What do I offer?</h2>
             <p>im a skilled react developer with a love for making creative beatiful apps.</p>
@@ -35,7 +35,7 @@ const About = () => {
                 
             </ul>
         </div>
-    </section>
+   </div>
   )
 }
 

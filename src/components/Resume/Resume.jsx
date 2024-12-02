@@ -88,10 +88,11 @@ const Resume = () => {
           </ul>
         </div>
         <h3>RECENT PROJECTS</h3>
-        <h4> Rancid Tomatillo (Repository) (Deploy) 45 Hours</h4>
+        <h4> CHATTR - NEXT.JS Application - <a href="https://github.com/Sterling47/ChatApp">(Repository)</a> Currently work in progress</h4>
 
-        <span>Tech Stack:</span> React.js, FramerMotion.js, HTML, CSS, Cypress
-       <p>Developed a dynamic React movie review application that seamlessly integrates third-party API data to deliver an engaging, user-focused experience.</p> 
+        <span>Tech Stack:</span> Next.js | Prisma | Kinde Auth | Postgresql | Pusher.js
+        <p>
+        Chattr enables real-time messaging with Pusher, private and public room creation, user authentication, and a customizable friends list, built with server-side and client-side rendering for seamless collaboration and connectivity.</p>
         <ul>
           <li>Dynamic UI: Utilized React's state management and CRUD operations to create a responsive, interactive user interface.</li>
           <li>Enhanced UX: Implemented Framer-Motion for seamless animation transitions, elevating user engagement.</li>
@@ -100,14 +101,14 @@ const Resume = () => {
         <h4>Ingredient Search - FullStack (FE Repo) (BE Repo) (Deploy) 85 Hours</h4>
         <span>Tech Stack:</span> React.js, Express.js, PostgreSQL, Knex.js, HTML, CSS, JavaScript
         <p>Designed and developed a full-stack application that enables users to efficiently search, view, and manage detailed food ingredient information.</p>
-      <ul>
-        <li>
-          Full-Stack Development: Developed a responsive frontend and a robust backend, integrating migration files, seed files, and environment variables for secure and efficient data management.
-        </li>
-        <li>
-          Data Management: Utilized CSV files for data import and PostgreSQL for reliable, scalable database management.
-        </li>
-       </ul>
+        <ul>
+          <li>
+            Full-Stack Development: Developed a responsive frontend and a robust backend, integrating migration files, seed files, and environment variables for secure and efficient data management.
+          </li>
+          <li>
+            Data Management: Utilized CSV files for data import and PostgreSQL for reliable, scalable database management.
+          </li>
+        </ul>
       </div>
     </div>
   )
