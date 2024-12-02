@@ -1,5 +1,6 @@
 import React from 'react'
 import './Resume.css'
+import dlfile from '../../assets/file.png'
 
 const Resume = () => {
   const skills = {
@@ -54,6 +55,7 @@ const Resume = () => {
   return (
     <div className='wrapper'>
       <h1 className='resume-h1'>Resume</h1>
+      <button><img src={dlfile} alt="" /></button>
       <div className='resume-wrapper'>
         <div className='resume-header'>
           <h2>Adam Konber</h2>
