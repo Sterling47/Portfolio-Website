@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './portfolio.css';
-import rancidProject from '../../assets/RancidProject.png';
-import beerHereProject from '../../assets/beerhere-screenshot.png';
-import VanProject from '../../assets/VanLife.png'
-import fullStack from '../../assets/fullstackproject.png';
+import rancidProject from '../assets/RancidProject.png';
+import beerHereProject from '../assets/beerhere-screenshot.png';
+import VanProject from '../assets/VanLife.png'
+import fullStack from '../assets/fullstackproject.png';
 
 const Portfolio = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

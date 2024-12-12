@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
-import logo from '../../assets/a.kgreen.png';
-import contact from '../../assets/message.png';
+import logo from '../assets/a.kgreen.png';
+import contact from '../assets/message.png';
 import { Link } from 'react-router-dom';
                     
 

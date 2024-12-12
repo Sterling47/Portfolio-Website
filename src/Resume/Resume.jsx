@@ -1,6 +1,6 @@
 import React from 'react'
 import './Resume.css'
-import dlfile from '../../assets/file.png'
+import dlfile from '../assets/file.png'
 import resume from '/src/assets/resume.pdf'
 
 const Resume = () => {

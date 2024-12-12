@@ -1,8 +1,8 @@
 import React from 'react';
 import './about.css';
-import access from '../../assets/accesibility.png'
-import thinker from '../../assets/design-thinking.png';
-import team from '../../assets/team.png'
+import access from '../assets/accesibility.png'
+import thinker from '../assets/design-thinking.png';
+import team from '../assets/team.png'
 
 const About = () => {
   return (

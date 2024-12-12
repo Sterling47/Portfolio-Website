@@ -1,11 +1,11 @@
 import React from 'react';
 import './intro.css';
-import headshot from '../../assets/headshots.jpg';
-import figma from '../../assets/figma.png'
-import cssicon from '../../assets/css.png'
-import typescript from '../../assets/typescript.png'
-import sqlicon from '../../assets/sql.png'
-import reacticon from '../../assets/atom.png'
+import headshot from '../assets/headshots.jpg';
+import figma from '../assets/figma.png'
+import cssicon from '../assets/css.png'
+import typescript from '../assets/typescript.png'
+import sqlicon from '../assets/sql.png'
+import reacticon from '../assets/atom.png'
 
 
 const Intro = () => {

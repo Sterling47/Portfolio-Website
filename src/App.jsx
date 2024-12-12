@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import Navbar from '@/components/Navbar/Navbar';
-import Intro from '@/components/Intro/Intro';
-import About from '@/components/About/About';
-import Portfolio from '@/components/Portfolio/Portfolio';
-import Contact from '@/components/Contact/Contact';
-import Resume from '@/components/Resume/Resume';
+import Navbar from '@/Navbar/Navbar';
+import Intro from '@/Intro/Intro';
+import About from '@/About/About';
+import Portfolio from '@/Portfolio/Portfolio';
+import Contact from '@/Contact/Contact';
+import Resume from '@/Resume/Resume';
 import '../style.css'
 
 function App() {
