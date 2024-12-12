@@ -1,7 +1,6 @@
 import React from 'react';
 import './intro.css';
 import headshot from '../../assets/headshots.jpg';
-import contact from '../../assets/message.png';
 import figma from '../../assets/figma.png'
 import cssicon from '../../assets/css.png'
 import typescript from '../../assets/typescript.png'
