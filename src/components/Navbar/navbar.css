@@ -35,6 +35,7 @@
 .menuListItem:hover {
     color: rgb(150, 215, 52);
     padding-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -25px;
     border-bottom: 3px solid rgb(150, 215, 52);
 } 
   

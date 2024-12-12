@@ -1,6 +1,7 @@
 import React from 'react'
 import './Resume.css'
 import dlfile from '../../assets/file.png'
+import resume from '/src/assets/resume.pdf'
 
 const Resume = () => {
   const skills = {
@@ -54,8 +55,12 @@ const Resume = () => {
 
   return (
     <div className='wrapper'>
-      <h1 className='resume-h1'>Resume</h1>
-      <button><img src={dlfile} alt="" /></button>
+      <div className="res-header">
+        <h1 className='resume-h1'>Resume</h1>
+        <a href='src/assets/resume.pdf' download='Adam_Konber_resume.pdf' className='dl-bttn'>
+          <img src={dlfile} alt="" className='dl-file' />
+        </a>
+      </div>
       <div className='resume-wrapper'>
         <div className='resume-header'>
           <h2>Adam Konber</h2>
@@ -94,14 +99,14 @@ const Resume = () => {
 
         <span>Tech Stack:</span> Next.js | Prisma | Kinde Auth | Postgresql | Pusher.js
         <p>
-        Chattr enables real-time messaging with Pusher, private and public room creation, user authentication, and a customizable friends list, built with server-side and client-side rendering for seamless collaboration and connectivity.</p>
+          Chattr enables real-time messaging with Pusher, private and public room creation, user authentication, and a customizable friends list, built with server-side and client-side rendering for seamless collaboration and connectivity.</p>
         <ul>
           <li>Dynamic UI: Utilized React's state management and CRUD operations to create a responsive, interactive user interface.</li>
           <li>Enhanced UX: Implemented Framer-Motion for seamless animation transitions, elevating user engagement.</li>
           <li>Tested Reliability: Ensured application stability with comprehensive Cypress testing across all user flows.</li>
         </ul>
-        <h4>Ingredient Search - FullStack (FE Repo) (BE Repo) (Deploy) 85 Hours</h4>
-        <span>Tech Stack:</span> React.js, Express.js, PostgreSQL, Knex.js, HTML, CSS, JavaScript
+        <h4>Ingredient Search - FullStack <a href="https://github.com/Sterling47/backend-stretch">(Frontend Repo)</a> <a href="https://github.com/Sterling47/backend-stretch-api">(Backend-Api)</a> <a href="https://backend-stretch.vercel.app/">(Deploy)</a> 85 Hours</h4>
+        <span>Tech Stack:</span> React.js | Express.js | PostgreSQL | Knex.js | HTML | CSS | JavaScript
         <p>Designed and developed a full-stack application that enables users to efficiently search, view, and manage detailed food ingredient information.</p>
         <ul>
           <li>
