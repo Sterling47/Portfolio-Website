@@ -1,7 +1,7 @@
 import React from 'react'
 import './Resume.css'
 import dlfile from '../assets/file.png'
-import resume from '/src/assets/resume.pdf'
+import resume from '../assets/adamsresume.pdf'
 
 const Resume = () => {
   const skills = {
@@ -57,7 +57,7 @@ const Resume = () => {
     <div className='wrapper'>
       <div className="res-header">
         <h1 className='resume-h1'>Resume</h1>
-        <a href='src/assets/resume.pdf' download='Adam_Konber_resume.pdf' className='dl-bttn'>
+        <a href={resume} download='Adam_Konber_resume.pdf' className='dl-bttn'>
           <img src={dlfile} alt="" className='dl-file' />
         </a>
       </div>
