@@ -39,6 +39,89 @@
     border-bottom: 3px solid rgb(150, 215, 52);
 } 
   
+
+/* NEW */
+
+
+.menuToggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* Keep above other elements */
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+
+.hamburger.open {
+    background-color: transparent; /* Hide middle line when open */
+}
+
+.hamburger.open::before {
+    transform: rotate(45deg);
+}
+
+.hamburger.open::after {
+    transform: rotate(-45deg);
+}
+
+/* Menu: Hidden by default for mobile */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    background: rgba(17, 17, 17, 0.9); /* Dark background for dropdown */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Items in Dropdown */
+
+/* Contact Button Always Visible */
+.menuBtn {
+    z-index: 8; /* Stay above dropdown */
+    margin-top: 1rem;
+}
+/* END OF NEW */
+
 .menuBtn {
     display: flex;
     align-items: center;
@@ -61,13 +144,14 @@
     height: 1rem;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 600px) {
     .navbar {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
         padding: 1rem;
+        width: 100vw;
     }
 
     .logo {
@@ -90,35 +174,27 @@
         width: 0.85rem;
         height: 0.85rem;
     }
-}
 
-/* Medium devices - adjustments at 1064px */
-@media (max-width: 1064px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 1.5rem;
-        max-width: 100%;
-        height: 5rem;
+
+    .menuToggle {
+        display: block; /* Show toggle button on mobile */
     }
 
-    .logo {
-        height: 6rem;
-        width: 6rem;
+    .menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.show {
+        display: flex; /* Show dropdown when toggle is active */
     }
 
     .menuListItem {
-        margin: 0.75rem;
-        font-size: 1.1rem;
+        margin: 0.5rem 0;
     }
 
     .menuBtn {
-        font-size: 0.85rem;
-        padding: 0.75rem 1.5rem;
-    }
-
-    .menuBtnImg {
-        width: 0.9rem;
-        height: 0.9rem;
+        margin-top: 1rem;
     }
 }

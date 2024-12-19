@@ -18,9 +18,7 @@ const Intro = () => {
           </h1>
           <p>From the ground up React developer driven by the passion for building efficient, scalable projects that benefit all users. Committed to accessibility and thorough testing to ensure the best possible experience for everyone</p>
         </div>
-        <div className="img-wrap">
           <img className='headShot' src={headshot} alt="headshot" />
-        </div>
       </div>
       <div className="icon-container">
         <img src={reacticon} alt='react icon' className='icon' />

@@ -75,3 +75,36 @@ body, html, #root {
 ::-webkit-scrollbar-thumb {
     background-color: #555;
 }
+
+
+@media (max-width: 600px) {
+    /* Wrapper on Mobile */
+    .wrapper {
+        height: 100%;
+        justify-content: flex-start; /* Adjust alignment for scrolling */
+        border: 2px solid yellow; /* Debug styling */
+    }
+
+    /* Page Wrapper on Mobile */
+    .page-wrapper {
+        height: 100%; /* Use full height */
+        overflow-y: auto; /* Allow vertical scrolling */
+        border: 2px solid rgb(146, 146, 101); /* Debug styling */
+    }
+
+    /* Icon Grid on Mobile */
+    .icon-container {
+        display: grid; /* Switch to grid layout */
+        grid-template-columns: repeat(2, 1fr); /* 2 icons per row */
+        gap: 0.5rem; /* Reduce gap for smaller screens */
+        width: 100%; /* Full width */
+        height: auto; /* Let height adjust dynamically */
+    }
+
+    .icon {
+        width: 100%; /* Icon size adjusts based on container */
+        height: auto;
+        justify-self: center; /* Center within grid cell */
+        align-self: center;
+    }
+}
