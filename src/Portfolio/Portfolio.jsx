@@ -51,35 +51,34 @@ const Portfolio = () => {
     return (
         <section className="wrapper">
             <div id="portfolio">
-                <div className="elements">
-                    <h1>My Portfolio</h1>
-                    <p>Some curated projects to showcase the skills I've taught myself.</p>
-                    <div className="carousel">
-                        <button className='projectbtn' onClick={handlePrev}> &lt; Prev</button>
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={currentIndex}
-                                initial={{ x: 300, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                exit={{ x: -300, opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className="project"
-                            >
-                                <h2>{projects[currentIndex].title}</h2>
-                                <img className="prjImg" src={projects[currentIndex].image} alt={`${projects[currentIndex].title} project`} />
-                                <p>{projects[currentIndex].description}</p>
-                                <div className="button-wrapper">
-                                    <a target="_blank" className="projectbtn" href={projects[currentIndex].deployLink} rel="noopener noreferrer">
-                                        Deploy
-                                    </a>
-                                    <a target="_blank" className="projectbtn" href={projects[currentIndex].githubLink} rel="noopener noreferrer">
-                                        Github repo
-                                    </a>
-                                </div>
-                            </motion.div>
-                        </AnimatePresence>
-                        <button className='projectbtn' onClick={handleNext}>Next &gt;</button>
-                    </div>
+
+                <h1>My Portfolio</h1>
+                <p>Some curated projects to showcase the skills I've taught myself.</p>
+                <div className="carousel">
+                    <button className='project-arrow' onClick={handlePrev}> &lt;</button>
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={currentIndex}
+                            initial={{ x: 300, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            exit={{ x: -300, opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="project"
+                        >
+                            <h2>{projects[currentIndex].title}</h2>
+                            <img className="prjImg" src={projects[currentIndex].image} alt={`${projects[currentIndex].title} project`} />
+                            <p>{projects[currentIndex].description}</p>
+                            <div className="button-wrapper">
+                                <a target="_blank" className="projectbtn" href={projects[currentIndex].deployLink} rel="noopener noreferrer">
+                                    Deploy
+                                </a>
+                                <a target="_blank" className="projectbtn" href={projects[currentIndex].githubLink} rel="noopener noreferrer">
+                                    Repo
+                                </a>
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
+                    <button className='project-arrow' onClick={handleNext}> &gt;</button>
                 </div>
             </div>
         </section>
