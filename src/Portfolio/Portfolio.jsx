@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import './portfolio.css';
+import React from 'react';
+import { motion } from 'framer-motion';
 import rancidProject from '../assets/RancidProject.png';
 import beerHereProject from '../assets/beerhere-screenshot.png';
-import VanProject from '../assets/VanLife.png'
+import VanProject from '../assets/VanLife.png';
 import fullStack from '../assets/fullstackproject.png';
+import { BackgroundGradient } from '../UI/background-gradient';
 
 const Portfolio = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
     const projects = [
         {
             title: 'Rancid Tomatillos',
             image: rancidProject,
-            description: 'A React app Created with Vite',
+            description: 'A React app created with Vite',
             deployLink: 'https://rancid-tomatillos-lilac.vercel.app/',
             githubLink: 'https://github.com/Sterling47/RancidTomatillos',
         },
@@ -27,60 +25,65 @@ const Portfolio = () => {
         {
             title: 'Van Life - A Van Rental Application',
             image: VanProject,
-            description: 'A React app Created with Vite',
+            description: 'A React app created with Vite',
             deployLink: 'https://van-life-app-two.vercel.app/',
             githubLink: 'https://github.com/Sterling47/VanLifeApp/tree/main',
         },
         {
             title: 'Ingredient Data Search - A Fullstack App',
             image: fullStack,
-            description: 'A Fullstack application built using React, Express.js, Knex.js, and a PostgreSQL database',
+            description: 'A fullstack application built using React, Express.js, Knex.js, and a PostgreSQL database',
             deployLink: 'https://backend-stretch.vercel.app/',
             githubLink: 'https://github.com/Sterling47/backend-stretch',
         },
     ];
 
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
-    };
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
-    };
-
     return (
-        <section className="wrapper">
-            <div id="portfolio">
-
-                <h1>My Portfolio</h1>
-                <p>Some curated projects to showcase the skills I've taught myself.</p>
-                <div className="carousel">
-                    <button className='project-arrow' onClick={handlePrev}> &lt;</button>
-                    <AnimatePresence mode="wait">
+        <section id="portfolio" className="flex flex-col items-center py-10 px-6 h-full w-full ">
+            <BackgroundGradient className="max-w-4xl  p-6 rounded-[22px] bg-white dark:bg-zinc-900 shadow-lg">
+                <h1 className="text-4xl font-bold text-center mb-4 dark:text-white">My Portfolio</h1>
+                <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
+                    A collection of projects showcasing my skills and creativity.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    {projects.map((project, index) => (
                         <motion.div
-                            key={currentIndex}
-                            initial={{ x: 300, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            exit={{ x: -300, opacity: 0 }}
-                            transition={{ duration: 0.5 }}
-                            className="project"
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-800"
                         >
-                            <h2>{projects[currentIndex].title}</h2>
-                            <img className="prjImg" src={projects[currentIndex].image} alt={`${projects[currentIndex].title} project`} />
-                            <p>{projects[currentIndex].description}</p>
-                            <div className="button-wrapper">
-                                <a target="_blank" className="projectbtn" href={projects[currentIndex].deployLink} rel="noopener noreferrer">
-                                    Deploy
-                                </a>
-                                <a target="_blank" className="projectbtn" href={projects[currentIndex].githubLink} rel="noopener noreferrer">
-                                    Repo
-                                </a>
+                            <img
+                                src={project.image}
+                                alt={`${project.title} thumbnail`}
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-4">
+                                <h2 className="text-2xl font-semibold mb-2 dark:text-white">{project.title}</h2>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                                <div className="flex gap-4">
+                                    <a
+                                        href={project.deployLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-btn"
+                                    >
+                                        View Live
+                                    </a>
+                                    <a
+                                        href={project.githubLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-btn"
+                                    >
+                                        GitHub Repo
+                                    </a>
+                                </div>
                             </div>
                         </motion.div>
-                    </AnimatePresence>
-                    <button className='project-arrow' onClick={handleNext}> &gt;</button>
+                    ))}
                 </div>
-            </div>
+            </BackgroundGradient>
         </section>
     );
 };
