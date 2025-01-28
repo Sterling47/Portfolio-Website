@@ -1,58 +1,8 @@
-.aboutInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem 2rem;
-    border-radius: .64rem;
-    height: 90%;
-    width: 80%;
-    background: rgba(26, 26, 26, 0.2);
-    backdrop-filter: blur(10px);
-}
 
-.listInfo {
-    display: flex;
-    flex-direction: column;
-    gap:  2rem;
-    width: 80%;
-    text-align: left;
-    margin: 1.5rem;
-    height: 80%;
-}
 
-.listItem {
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-    border-radius: 1rem;
-    background: rgba(30, 30, 30, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    list-style: none;
 
-}
 
-.item-right {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-around;
-    width: 80%;
-    height: 100%;
-    margin-left: 3rem; 
-}
 
-.item-right img {
-    width: 20%;
-    height: 100%;
-}
-
-.itemText h3 {
-    font-size: x-large;
-}
-
-.itemText h3, .itemText p {    
-    margin: 1rem auto 1rem 0.5rem;
-} 
 
 
 @media (max-width: 600px) {
