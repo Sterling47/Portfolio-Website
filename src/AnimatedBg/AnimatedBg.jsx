@@ -30,7 +30,7 @@ useEffect(() => {
 
 
 
-      <div className="absolute blur-[3px] inset-0 p-2 grid grid-cols-12 gap-2 transform skew-y-12 scale-y-150 scale-x-110 ">
+      <div className="absolute inset-0 p-2 grid grid-cols-12 gap-2 transform skew-y-12 scale-y-150 scale-x-110 ">
 
         {/* Row 1 */}
         <div className="col-span-2 bg-green-900 animate-pulse rounded grid-Background" > </div>

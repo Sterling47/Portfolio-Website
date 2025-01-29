@@ -17,8 +17,8 @@ function App() {
   return (
     <Router>
       <AnimatedBg />
-      <div className="relative flex  flex-col m:gap-8 overflow-y-hidden w-full h-full justify-between items-center ">
-        <Intro className="h-[100vh] w-full" />
+      <div className="relative flex flex-col overflow-y-hidden w-full h-full justify-evenly items-center ">
+        <Intro className="h-screen w-full" />
         <About className="h-[100vh] w-full" />
         <Portfolio className="h-[100vh] w-full" />
         <Contact className="h-[100vh] w-full" />
