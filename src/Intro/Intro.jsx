@@ -14,14 +14,14 @@ import { FlipWords } from '../UI/flip-words';
 
 const Intro = () => {
   const tech = [
-    { id: 1, name: "React", designation: "Software Engineer", image: reacticon },
-    { id: 2, name: "TypeScript", designation: "Product Manager", image: typescript },
-    { id: 3, name: "Figma", designation: "Data Scientist", image: figma },
-    { id: 4, name: "Postgres", designation: "UX Designer", image: sqlicon },
-  ];
+    { id: 1, name: "React", designation: "Frontend Javascript Library ", image: reacticon },
+    { id: 2, name: "TypeScript", designation: "Strongly Typed JavaScript for Scalable Apps", image: typescript },
+    { id: 3, name: "Figma", designation: "UI/UX Design & Prototyping Tool", image: figma },
+    { id: 4, name: "Postgres", designation: "Relational Database for Scalable Storage", image: sqlicon },
+];
 
   const words = 'From the ground up React developer driven by the passion for building efficient, scalable projects that benefit all users. Committed to accessibility and thorough testing to ensure the best possible experience for everyone';
-  const flipWords = ['Creative', 'Intuitive', "Hardworking"];
+  const flipWords = ['Fullstack Engineer', 'Problem Solver', "Hardworking",  "Team Player", "Creative", "Innovative", "Adaptable",  "Lifelong Learner"];
 
   return (
     <div className="flex flex-col items-center h-screen w-full gap-8 p-4 sm:p-6 lg:p-10">
@@ -47,9 +47,9 @@ const Intro = () => {
         <div className="flex flex-col justify-center items-center w-full lg:w-[80%] text-center mt-6">
           {/* Title */}
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 mb-4">
-            I'm Adam Konber <br /> FullStack Engineer
+            I'm Adam Konber
           </h2>
-
+          <FlipWords words={flipWords} />
           {/* Description */}
           <TextGenerateEffect
             words={words}

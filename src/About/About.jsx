@@ -9,7 +9,7 @@ import problemSolve from '../assets/piechart.png';
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center mt-[10rem] sm:mt-0 items-center min-h-screen px-4 sm:px-8 w-full">
+    <div className="flex flex-col justify-center mt-[16rem] sm:mt-0 items-center min-h-screen px-4 sm:px-8 w-full">
       <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 p-6 sm:p-8 rounded-lg w-full max-w-[90%] gap-6">
         {/* Section 1: Introduction */}
         <div className="col-span-12 md:col-span-9 md:row-span-2 bg-shadowGray rounded-lg p-6 backdrop-blur-md hover:shadow-gradient">
