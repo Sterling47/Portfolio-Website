@@ -44,11 +44,12 @@ const Intro = () => {
 
       {/* Bottom Section */}
       <BackgroundGradient className="flex flex-col lg:flex-row justify-center items-center h-auto dark:bg-zinc-900 w-full p-4 sm:p-6  rounded-[22px]">
-        <div className="flex flex-col justify-center items-center w-full lg:w-[80%] text-center mt-6">
+        <div className="flex flex-col justify-center gap-3 items-center w-full lg:w-[80%] text-center mt-6">
           {/* Title */}
-          <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 mb-4">
-            I'm Adam Konber
+          <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 ">
+            Welcome to my portfolio 
           </h2>
+          <h2 className='className="text-xl sm:text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500'>I'm Adam Konber</h2>
           <FlipWords words={flipWords} />
           {/* Description */}
           <TextGenerateEffect
