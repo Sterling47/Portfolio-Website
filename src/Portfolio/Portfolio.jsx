@@ -5,6 +5,7 @@ import beerHereProject from '../assets/beerhere-screenshot.png';
 import VanProject from '../assets/VanLife.png';
 import fullStack from '../assets/fullstackproject.png';
 import { BackgroundGradient } from '../UI/background-gradient';
+import { AnimatedTestimonials } from '../UI/animated-testimonials';
 
 const Portfolio = () => {
     const projects = [
@@ -37,52 +38,42 @@ const Portfolio = () => {
             githubLink: 'https://github.com/Sterling47/backend-stretch',
         },
     ];
+    const testimonials = [
+        {
+            quote: "A React app created with Vite",
+            name: "Rancid Tomatillos",
+            designation: "",
+            src: rancidProject
+        },
+        {
+            quote: "A JavaScript Application",
+            name: "BeerHere - A Brewery Finder",
+            designation: "",
+            src: beerHereProject
+        },
+        {
+            quote: "A React app created with Vite",
+            name: "Van Life - A Van Rental Application",
+            designation: "",
+            src: VanProject
+        },
+        {
+            quote: "A fullstack application built using React, Express.js, Knex.js, and a PostgreSQL database",
+            name: "Ingredient Data Search - A Fullstack App",
+            designation: "",
+            src: fullStack
+        }
+    ];
+    
 
     return (
         <section id="portfolio" className="flex flex-col items-center py-10 px-6 h-full w-full ">
-            <BackgroundGradient className="max-w-4xl  p-6 rounded-[22px] bg-white dark:bg-zinc-900 shadow-lg">
+            <BackgroundGradient className="max-w-4xl p-6 rounded-[22px] bg-white dark:bg-zinc-900 shadow-lg">
                 <h1 className="text-4xl font-bold text-center mb-4 dark:text-white">My Portfolio</h1>
                 <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
-                    A collection of projects showcasing my skills and creativity.
+                    A collection of projects showcasing my tecnical skills and creativity.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-800"
-                        >
-                            <img
-                                src={project.image}
-                                alt={`${project.title} thumbnail`}
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-4">
-                                <h2 className="text-2xl font-semibold mb-2 dark:text-white">{project.title}</h2>
-                                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                                <div className="flex gap-4">
-                                    <a
-                                        href={project.deployLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="project-btn"
-                                    >
-                                        View Live
-                                    </a>
-                                    <a
-                                        href={project.githubLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="project-btn"
-                                    >
-                                        GitHub Repo
-                                    </a>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                <AnimatedTestimonials testimonials={testimonials} />
             </BackgroundGradient>
         </section>
     );
