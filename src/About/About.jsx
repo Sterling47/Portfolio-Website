@@ -8,14 +8,14 @@ import problemSolve from '../assets/piechart.png';
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center mt-[16rem] sm:mt-0 items-center min-h-screen px-4 sm:px-8 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 p-6 sm:p-8 rounded-lg w-full max-w-[90%] gap-6">
+    <div className="flex flex-col justify-center mt-[16rem] sm:mt-0 items-center min-h-full  sm:px-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 p-6 sm:p-8 rounded-lg w-full max-w-[90%] max-h-[90%]  gap-6">
         {/* Section 1: Introduction */}
         <div className="col-span-12 md:col-span-9 md:row-span-2 bg-shadowGray rounded-lg p-6 backdrop-blur-[98px] hover:shadow-gradient">
           <h2 className="text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-bold mb-4 text-center">
             ABOUT ME
           </h2>
-          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300">
+          <p className="text-base sm:text-lg text-white">
             I'm a Denver-based Full-Stack Engineer passionate about building scalable, accessible, and maintainable solutions. My background blends self-taught foundations with formal training, emphasizing creative problem-solving and technical adaptability. Whether crafting frontend experiences or optimizing backend workflows, I thrive in collaborative environments and love pushing the boundaries of technology.
           </p>
         </div>
@@ -28,15 +28,15 @@ const About = () => {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <img src={team} alt="Collaboration" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold">Collaboration</h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Collaboration</h4>
+              <p className="text-white">
                 Building in teams, code reviews, and cross-team problem-solving.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <img src={tech} alt="Technology" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold">Emerging Tech</h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Emerging Tech</h4>
+              <p className="text-white">
                 Enthusiastic about AI, WebSockets, and scalable fullstack solutions.
               </p>
             </div>
@@ -48,7 +48,7 @@ const About = () => {
           <h3 className="text-lg sm:text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-semibold mb-4">
             Challenges I've Overcome
           </h3>
-          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300">
+          <p className="text-base sm:text-lg text-white">
             Learning new technologies like Express.js, PostgreSQL, and Prisma while developing scalable fullstack applications. Remote collaboration taught me adaptability, problem-solving, and effective communication in a fast-paced environment.
           </p>
         </div>
@@ -62,8 +62,8 @@ const About = () => {
             {/* Frontend */}
             <div className="flex flex-col items-center text-center">
               <img src={thinker} alt="Frontend" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold">Frontend</h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Frontend</h4>
+              <p className="text-white">
                 React, Next.js, TypeScript, JavaScript, HTML, Tailwind, CSS, Material-UI, Framer Motion
               </p>
             </div>
@@ -71,8 +71,8 @@ const About = () => {
             {/* Backend */}
             <div className="flex flex-col items-center text-center">
               <img src={problemSolve} alt="Backend" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold">Backend</h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Backend</h4>
+              <p className="text-white">
                 PostgreSQL, Express.js, Prisma, Knex.js, REST APIs, WebSockets
               </p>
             </div>
@@ -80,8 +80,8 @@ const About = () => {
             {/* Other Skills */}
             <div className="flex flex-col items-center text-center">
               <img src={access} alt="Other Skills" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold">Other Skills</h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Other Skills</h4>
+              <p className="text-white">
                 Git, npm, Vite, Cypress, CI/CD, AWS EC2, Agile, Technical Documentation, Code Reviews
               </p>
             </div>
