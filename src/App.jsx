@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <AnimatedBg />
-      <div className="relative flex flex-col overflow-y-hidden w-full h-full justify-evenly items-center ">
+      <div className="relative flex flex-col overflow-y-hidden w-full h-full gap-[10rem] justify-evenly items-center ">
         <Intro className="h-screen w-full" />
         <About className="h-[100vh] w-full" />
         <Portfolio className="h-[100vh] w-full" />
