@@ -36,7 +36,7 @@ export const AnimatedTestimonials = ({
       className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
       <div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
         <div>
-          <div className="relative h-80 w-full">
+          <div className="relative h-80 shadow-gradient rounded-[22px] w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -130,6 +130,10 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
+          <div className="flex mt-6 justify-start gap-5 ]">
+            <a target='_blank' href={testimonials[active].deployLink} className= "h-fit w-fit rounded-full p-3 bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button  text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300 "> Launch! </a>
+            <a target='_blank' href={testimonials[active].githubLink} className= "h-fit w-fit rounded-full p-3 bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button  text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300 ">Git Repo </a>
+          </div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
