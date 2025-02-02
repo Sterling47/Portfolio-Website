@@ -8,21 +8,83 @@ import problemSolve from '../assets/piechart.png';
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center mt-[16rem] sm:mt-0 items-center min-h-full  sm:px-8 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 p-6 sm:p-8 rounded-lg w-full max-w-[90%] max-h-[90%]  gap-6">
+    <div className="flex flex-col justify-center mt-[16rem] sm:mt-0 items-center h-full  sm:px-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 p-6 sm:p-8 rounded-lg w-full max-w-[90%] max-h-[90%]  gap-6">
         {/* Section 1: Introduction */}
-        <div className="col-span-12 md:col-span-9 md:row-span-2 bg-shadowGray rounded-lg p-6 backdrop-blur-[98px] hover:shadow-gradient">
+        <div className="col-span-12 md:col-span-9 md:row-span-1 bg-shadowGray rounded-lg p-6 backdrop-blur-[98px] hover:shadow-gradient">
           <h2 className="text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-bold mb-4 text-center">
-            ABOUT ME
+            Technical Roadmap
           </h2>
           <p className="text-base sm:text-lg text-white">
-            I'm a Denver-based Full-Stack Engineer passionate about building scalable, accessible, and maintainable solutions. My background blends self-taught foundations with formal training, emphasizing creative problem-solving and technical adaptability. Whether crafting frontend experiences or optimizing backend workflows, I thrive in collaborative environments and love pushing the boundaries of technology.
+          Since starting my journey as a self-taught coder and later attending Turing School of Software, my technical growth has been driven by curiosity, hands-on experience, and a commitment to building real-world applications. I began with JavaScript, expanding into React, Express.js, and PostgreSQL to develop full-stack applications. My approach emphasizes accessibility, efficient processes, and research-driven development, ensuring scalable and maintainable code. Through projects like my dynamic movie review app and Beer Here, I have refined my skills in state management, API integration, end-to-end testing with Cypress, and UI animations with Framer Motion. Collaborating on group projects, shadowing at Ibotta, and networking with industry professionals have further shaped my ability to learn quickly, adapt, and contribute meaningfully to development teams.
           </p>
         </div>
 
         {/* Section 2: Interests */}
-        <div className="col-span-12 md:col-span-3 md:row-span-6 bg-shadowGray flex items-center flex-col rounded-lg p-6 backdrop-blur-[98px] hover:shadow-gradient">
-          <h3 className="text-lg sm:text-xl text-center md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-semibold mb-4">
+        <div className="col-span-12 md:col-span-3 md:row-span-2 bg-shadowGray flex items-center flex-col rounded-lg p-6 backdrop-blur-[98px] hover:shadow-gradient">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 mb-4">
+            Technical Skills
+          </h3>
+          
+            <div className="flex flex-col w-full justify-evenly gap-4">
+              {/* Frontend */}
+              <div className="flex flex-col items-center justify-center text-center">
+                <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">FrontEnd</h4>
+                <ul className="flex flex-col  justify-center list-inside text-white">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>Tailwind</li>
+                  <li>CSS</li>
+                  <li>MUI</li>
+                  <li>Framer Motion</li>
+                </ul>
+              </div>
+              {/* Backend */}
+              <div className="flex flex-col items-center text-center">
+                <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Backend</h4>
+                <ul className="flex flex-col justify-center list-inside text-white">
+                  <li>PostgreSQL</li>
+                  <li>Express.js</li>
+                  <li>Prisma</li>
+                  <li>Knex.js</li>
+                  <li>REST APIs</li>
+                  <li>WebSockets</li>
+                </ul>
+              </div>
+        {/* Section 4: Technical Skills */}
+              <div className="flex flex-col items-center text-center">
+                <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Other Skills</h4>
+                <ul className="flex flex-col justify-center list-inside text-white">
+                  <li>Git</li>
+                  <li>npm</li>
+                  <li>Vite</li>
+                  <li>Cypress</li>
+                  <li>CI/CD</li>
+                  <li>AWS EC2</li>
+                  <li>Agile</li>
+                  <li>Technical Documentation</li>
+                  <li>Code Reviews</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        {/* Section 3: Challenges */}
+        {/* <div className="col-span-12 md:col-span-9 bg-shadowGray rounded-lg p-6 md:row-span-2 backdrop-blur-[98px] hover:shadow-gradient">
+          <h3 className="text-lg sm:text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-semibold mb-4">
+            Challenges I've Overcome
+          </h3>
+          <p className="text-base sm:text-lg text-white">
+            Learning new technologies like Express.js, PostgreSQL, and Prisma while developing scalable fullstack applications. Remote collaboration taught me adaptability, problem-solving, and effective communication in a fast-paced environment.
+          </p>
+        </div> */}
+
+          {/* Other Skills */}
+        <div className="col-span-12 md:col-span-9 flex flex-col items-center bg-shadowGray rounded-lg p-6 md:row-span-1 backdrop-blur-[98px] hover:shadow-gradient">
+        <h3 className="text-lg sm:text-xl text-center md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-semibold mb-4">
             Interests & Hobbies
           </h3>
           <div className="flex flex-col gap-6">
@@ -38,51 +100,6 @@ const About = () => {
               <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Emerging Tech</h4>
               <p className="text-white">
                 Enthusiastic about AI, WebSockets, and scalable fullstack solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Section 3: Challenges */}
-        <div className="col-span-12 md:col-span-9 bg-shadowGray rounded-lg p-6 md:row-span-2 backdrop-blur-[98px] hover:shadow-gradient">
-          <h3 className="text-lg sm:text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 font-semibold mb-4">
-            Challenges I've Overcome
-          </h3>
-          <p className="text-base sm:text-lg text-white">
-            Learning new technologies like Express.js, PostgreSQL, and Prisma while developing scalable fullstack applications. Remote collaboration taught me adaptability, problem-solving, and effective communication in a fast-paced environment.
-          </p>
-        </div>
-
-        {/* Section 4: Technical Skills */}
-        <div className="col-span-12 md:col-span-9 bg-shadowGray rounded-lg p-6 md:row-span-2 backdrop-blur-[98px] hover:shadow-gradient">
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500 mb-4">
-            Technical Skills
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-            {/* Frontend */}
-            <div className="flex flex-col items-center text-center">
-              <img src={thinker} alt="Frontend" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Frontend</h4>
-              <p className="text-white">
-                React, Next.js, TypeScript, JavaScript, HTML, Tailwind, CSS, Material-UI, Framer Motion
-              </p>
-            </div>
-
-            {/* Backend */}
-            <div className="flex flex-col items-center text-center">
-              <img src={problemSolve} alt="Backend" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Backend</h4>
-              <p className="text-white">
-                PostgreSQL, Express.js, Prisma, Knex.js, REST APIs, WebSockets
-              </p>
-            </div>
-
-            {/* Other Skills */}
-            <div className="flex flex-col items-center text-center">
-              <img src={access} alt="Other Skills" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Other Skills</h4>
-              <p className="text-white">
-                Git, npm, Vite, Cypress, CI/CD, AWS EC2, Agile, Technical Documentation, Code Reviews
               </p>
             </div>
           </div>

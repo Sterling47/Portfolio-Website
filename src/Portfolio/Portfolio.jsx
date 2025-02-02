@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import rancidProject from '../assets/RancidProject.png';
 import beerHereProject from '../assets/beerhere-screenshot.png';
+import chattrImg from '../assets/chattr.png';
 import VanProject from '../assets/VanLife.png';
 import fullStack from '../assets/fullstackproject.png';
 import { BackgroundGradient } from '../UI/background-gradient';
@@ -40,12 +41,12 @@ const Portfolio = () => {
     ];
     const testimonials = [
         {
-            quote: "A React app created with Vite",
-            name: "Rancid Tomatillos",
-            designation: "",
-            src: rancidProject,
-            deployLink: 'https://rancid-tomatillos-lilac.vercel.app/',
-            githubLink: 'https://github.com/Sterling47/RancidTomatillos',
+            quote: "A Real-time Chat Application created with users in mind",
+            name: "Chatt-r",
+            designation: [],
+            src: chattrImg,
+            deployLink: 'https://Chatt-r.vercel.app/',
+            githubLink: 'https://github.com/Sterling47/ChatApp',
         },
         {
             quote: "A JavaScript Application",
