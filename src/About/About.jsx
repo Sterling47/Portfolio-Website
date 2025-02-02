@@ -90,9 +90,9 @@ const About = () => {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <img src={team} alt="Collaboration" className="h-12 sm:h-16 w-12 sm:w-16 mb-2" />
-              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Collaboration</h4>
+              <h4 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-green-500 to-teal-500">Community Meetups</h4>
               <p className="text-white">
-                Building in teams, code reviews, and cross-team problem-solving.
+              I regularly attend local tech meetups, networking events, and conventions such as Denver Startup Week, React Denver, and Denver Dev Happy Hour. Engaging with the tech community offers invaluable opportunities to learn from industry professionals, expand my network, and contribute meaningfully through shared knowledge and collaboration. These events keep me connected to emerging trends, foster professional growth, and inspire innovative problem-solving.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
