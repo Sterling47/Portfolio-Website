@@ -49,11 +49,11 @@ const Portfolio = () => {
             githubLink: 'https://github.com/Sterling47/ChatApp',
         },
         {
-            quote: "A JavaScript Application",
+            quote: "A FrontEnd React Application Utilizng Open Brewery API",
             name: "BeerHere - A Brewery Finder",
             designation: "",
             src: beerHereProject,
-            deployLink: 'https://beer-here.vercel.app/',
+            deployLink: 'https://beerhere.vercel.app/',
             githubLink: 'https://github.com/Sterling47/BeerHere',
         },
         {
