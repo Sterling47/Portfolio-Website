@@ -43,6 +43,7 @@ const Contact = () => {
               <div className='flex justify-around items-center'>
                 <a target="_blank" href={LinkedIn}><img className='w-12 h-12 m-6 rounded-md hover:scale-110' src={linked} alt="LinkedIn" /></a>
                 <a target="_blank" href={gitLink}><img  className='w-12 h-12 m-6 bg-white rounded-md hover:scale-110' src={github} alt="GitHub" /></a>   
+            
               </div>
             </form> 
           ) : (

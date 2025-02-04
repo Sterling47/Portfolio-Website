@@ -1,7 +1,7 @@
 import React from 'react'
 import './Resume.css'
 import dlfile from '../assets/file.png'
-import resume from '../assets/adamsresume.pdf'
+import resume from '../assets/Adam_Konber_Resume.pdf'
 
 const Resume = () => {
   const skills = {
