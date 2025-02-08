@@ -4,6 +4,7 @@ import rancidProject from '../assets/RancidProject.png';
 import beerHereProject from '../assets/beerhere-screenshot.png';
 import chattrImg from '../assets/chattr.png';
 import VanProject from '../assets/VanLife.png';
+import tictactoe from '../assets/ttt.png';
 import fullStack from '../assets/fullstackproject.png';
 import { BackgroundGradient } from '../UI/background-gradient';
 import { AnimatedTestimonials } from '../UI/animated-testimonials';
@@ -57,6 +58,14 @@ const Portfolio = () => {
             githubLink: 'https://github.com/Sterling47/BeerHere',
         },
         {
+            quote: "A Javascript Applictation recreating Tic-Tac-Toe logic",
+            name: "Tic-Tac-Toe",
+            designation: "",
+            src: tictactoe,
+            deployLink: 'https://sterling47.github.io/Tic--Tac-Toe/',
+            githubLink: 'https://github.com/Sterling47/Tic--Tac--Toe',
+        },
+        {
             quote: "A React app created with Vite",
             name: "Van Life - A Van Rental Application",
             designation: "",
@@ -66,7 +75,7 @@ const Portfolio = () => {
         },
         {
             quote: "A fullstack application built using React, Express.js, Knex.js, and a PostgreSQL database",
-            name: "Ingredient Data Search - A Fullstack App",
+            name: "Ingredient Data Search - A Nutrient data search application",
             designation: "",
             src: fullStack,
             deployLink: 'https://backend-stretch.vercel.app/',
