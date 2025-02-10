@@ -7,6 +7,7 @@ import cssicon from '../assets/css.png';
 import typescript from '../assets/typescript.png';
 import sqlicon from '../assets/postgreSQL.png'
 import resumeFile from '../assets/file.png';
+import adamsResume from '../assets/Adam_Konber_Resume.pdf';
 import reacticon from '../assets/atom.png';
 import nextIcon from '../assets/next-img.png';
 import linked from '../assets/linkedin.png';
@@ -62,7 +63,7 @@ const Intro = () => {
               <a target="_blank" href={gitLink}>
                 <img className="w-8 h-8 sm:w-12 sm:h-12 m-4 sm:m-6 bg-white rounded-md hover:scale-110" src={github} alt="GitHub" />
               </a>
-              <a href="/src/assets/Adam_Konber_Resume.pdf" download="Adam_Konber_Resume.pdf" className='w-9 h-9 sm:w-12 sm:h-12 grid place-items-center bg-zinc-700 m-4 sm:m-6 rounded-md hover:scale-110'>
+              <a href={adamsResume} download='Adam_Konber_Resume' className='w-9 h-9 sm:w-12 sm:h-12 grid place-items-center bg-zinc-700 m-4 sm:m-6 rounded-md hover:scale-110'>
                 <img className="w-7 h-7 sm:w-12 sm:h-12 bg-zinc-700 rounded-md" src={resumeFile} alt="Resume" />
               </a>
             </div>
